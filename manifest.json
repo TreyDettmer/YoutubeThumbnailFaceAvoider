@@ -1,0 +1,35 @@
+{
+  "name": "YoutubeThumbnailFaceAvoider",
+  "version": "1.0",
+  "manifest_version": 2,
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["jquery-3.5.1.js","jquery.facedetection.js","face-api.min.js","content.js","require.js"]
+
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_title": "YoutubeThumbnailFaceAvoider",
+    "default_icon": {
+      "16": "icon16.png",
+      "24": "icon24.png",
+      "32": "icon32.png"
+    }
+  },
+  "web_accessible_resources":[
+    "blackImg.png",
+    "popup.js"
+  ],
+  "permissions": ["tabs"]
+}
