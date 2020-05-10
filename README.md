@@ -1,1 +1,1 @@
-# YoutubeThumbnailFaceRemover
+# YoutubeThumbnailFaceAvoider
