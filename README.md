@@ -12,7 +12,11 @@ This extension also implements the cors-anywhere NodeJS proxy which can be found
 
 As someone who frequently browses YouTube, I am often annoyed by the clickbait thumbnails that plague so much of the popular content. This is what motivated me to make an application that would remove these thumbnails so I wouldn't have to look at them. Although this application would likely not be practical, I saw this as an oppurtunity to broaden my CS knowledge and skillset.
 
-## The Process
+### How to Download
+
+
+
+## The Development Process
 
 ### Initial Design Idea
 
@@ -40,3 +44,7 @@ This is how the extension works:
   * content.js iterates over all of the videos again and removes the videos that were provided by popup.js
   
 The second hurdle I faced was retrieving each video thumbnail from its URL. I learned that there exists a security policy call CORS which exists on many webpages. CORS stands for Cross-Origin Resource Sharing. It determines whether a specified webpage can share resources with a domain that is different from its origin. In my case, the browser was trying to retrieve an image from a different origin. This action is blocked on many pages. The CORS security policy only applies to browser-to-server communication, not server-to-server communication. I learned about this in [this article.](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9). So, I needed to create a proxy server which would relay my request for the image. The proxy server would be able to access the image's webpage's resources since it is a server. I created a JavaScript file implementing [Rob--W's cors-anywhere](https://github.com/Rob--W/cors-anywhere) proxy server code and hosted the server on [Heroku.com.](https://heroku.com) 
+
+## Final Thoughts
+
+Overall, I am happy with how the extension turned out. The extension does have its faults. For instance, sometimes a video that I would want to watch or that I wouldn't consider to be clickbait, is removed. Also videos are never actually "removed" from the webpage. I discovered that if I actually deleted the HTML element associated with the video, then the video would reappear if I scrolled down (to load more videos) and scrolled back up. Instead of removing the video, I hide all information about the video. Despite these faults, I am very satisfied with how it turned out, especially since I was learning throughout the who process. 
