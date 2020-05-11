@@ -216,7 +216,7 @@ chrome.runtime.onMessage.addListener(
                 //Replace all images related to the video with a blank black image
                 for (k = 0; k < imgContainer.length;k++)
                 {
-                  var imgURL = chrome.extension.getURL("blackImg.png")
+                  var imgURL = chrome.extension.getURL("Images/blackImg.png")
                   imgContainer[k].src = imgURL
                 }
 

@@ -14,21 +14,21 @@
     }
   ],
   "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
+    "16": "Images/icon16.png",
+    "48": "Images/icon48.png",
+    "128": "Images/icon128.png"
   },
   "page_action": {
     "default_popup": "popup.html",
     "default_title": "YoutubeThumbnailFaceAvoider",
     "default_icon": {
-      "16": "icon16.png",
-      "24": "icon24.png",
-      "32": "icon32.png"
+      "16": "Images/icon16.png",
+      "24": "Images/icon24.png",
+      "32": "Images/icon32.png"
     }
   },
   "web_accessible_resources":[
-    "blackImg.png",
+    "Images/blackImg.png",
     "popup.js"
   ],
   "permissions": ["tabs"]
