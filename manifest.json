@@ -8,8 +8,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "js": ["jquery-3.5.1.js","jquery.facedetection.js","face-api.min.js","content.js","require.js"]
+      "matches": ["https://www.youtube.com/","http://www.youtube.com/","http://www.youtube.com/feed/*","https://www.youtube.com/feed/*"],
+      "js": ["jquery-3.5.1.js","jquery.facedetection.js","face-api.min.js","content.js"]
 
     }
   ],
