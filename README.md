@@ -14,7 +14,14 @@ As someone who frequently browses YouTube, I am often annoyed by the clickbait t
 
 ## The Process
 
-### The Design Idea
+### Initial Design Idea
+
+Here is how I initially planned for the application to work:
+
+1. The application would access a user's subscription feed and home page.
+2. The application would iterate over all of the videos on the respective page.
+3. For each video, the application would determine whether there is a dramatic face in the video's thumbnail.
+4. If there is a dramatic face in the video's thumbnail, then the application would remove that video from the page.
 
 ### First Approach
 
