@@ -6,7 +6,7 @@
 ![Example effect](Images/ThumbnailFaceAvoiderBeforeAfter.jpg)
 
 ## :warning:Disclaimer:warning:
-(November 22nd, 2022) Heroku (the hosting service this application uses) no longer offers a free plan so the application will likely not work anymore:disappointed:  
+(November 22nd, 2022) Heroku (the hosting service this extension uses) no longer offers a free plan so the extension will likely not work anymore:disappointed:  
 
 ### Important References
 
